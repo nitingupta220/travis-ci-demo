@@ -1,7 +1,7 @@
-language: node_js
-node_js:
+language: node_js # set the language of the project to be deployed
+node_js: #using nodejs stable version to build the project
   - "stable"
-cache:
+cache: # caching the node_modules folder 
   directories:
     - node_modules
 script:
@@ -11,7 +11,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $github_token
+  github_token: $github_token # Set in the settings page of your repository, as a secure variable
   local_dir: build
   on:
     branch: master
