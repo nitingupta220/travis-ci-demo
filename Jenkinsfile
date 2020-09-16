@@ -14,9 +14,6 @@ pipeline{
                 sh "npm install"
             }
             post{
-                always{
-                    echo "====++++always++++===="
-                }
                 success{
                     echo "Dependencies Installed Successfully"
                 }
