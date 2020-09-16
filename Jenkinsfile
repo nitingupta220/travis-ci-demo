@@ -8,6 +8,24 @@ pipeline{
                 git credentialsId: '4d7078da-78cf-4cc5-9111-003196355f4d', url: 'https://github.com/nitingupta220/travis-ci-demo.git'
             }
         }
+        stage("Install the dependencies"){
+            steps{
+                echo "Installing the dependencies"
+                sh "npm install"
+            }
+            post{
+                always{
+                    echo "====++++always++++===="
+                }
+                success{
+                    echo "Dependencies Installed Successfully"
+                }
+                failure{
+                    echo "Dependencies Installed Failed"
+                }
+        
+            }
+        }
         stage("Deploying to Github pages"){
             steps{
                 echo "Deploy started"
