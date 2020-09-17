@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/travis-ci-demo/static/css/main.692d75bb.chunk.css",
-    "main.js": "/travis-ci-demo/static/js/main.73fbb713.chunk.js",
-    "main.js.map": "/travis-ci-demo/static/js/main.73fbb713.chunk.js.map",
+    "main.js": "/travis-ci-demo/static/js/main.1230a40d.chunk.js",
+    "main.js.map": "/travis-ci-demo/static/js/main.1230a40d.chunk.js.map",
     "runtime~main.js": "/travis-ci-demo/static/js/runtime~main.6b559f4e.js",
     "runtime~main.js.map": "/travis-ci-demo/static/js/runtime~main.6b559f4e.js.map",
     "static/js/2.fdc7f0fe.chunk.js": "/travis-ci-demo/static/js/2.fdc7f0fe.chunk.js",
     "static/js/2.fdc7f0fe.chunk.js.map": "/travis-ci-demo/static/js/2.fdc7f0fe.chunk.js.map",
     "index.html": "/travis-ci-demo/index.html",
-    "precache-manifest.fb15ad93a199770b1c3c6ad26bd265b5.js": "/travis-ci-demo/precache-manifest.fb15ad93a199770b1c3c6ad26bd265b5.js",
+    "precache-manifest.32c69ca75892159b7cc90cfd69edb641.js": "/travis-ci-demo/precache-manifest.32c69ca75892159b7cc90cfd69edb641.js",
     "service-worker.js": "/travis-ci-demo/service-worker.js",
     "static/css/main.692d75bb.chunk.css.map": "/travis-ci-demo/static/css/main.692d75bb.chunk.css.map",
     "static/media/logo.svg": "/travis-ci-demo/static/media/logo.5d5d9eef.svg"
