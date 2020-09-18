@@ -47,7 +47,7 @@ pipeline{
             post{
                 success{
                     echo "Deploy successful" 
-                    emailext body: 'A Test EMail', subject: 'Test', to: 'nitin16@navgurukul.org'
+                    emailext body: 'A Test EMail', subject: 'Test', to: 'nitingupta220@gmail.com'
                 }
                 failure{
                     echo "Deploy failed"
