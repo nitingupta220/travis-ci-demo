@@ -11,7 +11,8 @@ pipeline{
         stage("Install the dependencies"){
             steps{
                 echo "Installing the dependencies"
-                sh "npm install"
+                sh "npm ci"
+                sh "npm run cy:verify"
             }
             post{
                 success{
@@ -21,6 +22,20 @@ pipeline{
                     echo "Dependencies Installed Failed"
                 }
         
+            }
+        }
+        stage("cypress parallel tests"){
+            environment {
+                CYPRESS_RECORD_KEY=credentials('cypress-record-key-demo')
+                CYPRESS_trashAssetsBeforeRuns = 'false'
+            }
+            parallel {
+                stage("Tester A"){
+                    steps{
+                        echo "Running build ${env.BUILD_ID}"
+                        sh "npm run e2e:record:parallel"
+                    }
+                }
             }
         }
         stage("Deploying to Github pages"){
