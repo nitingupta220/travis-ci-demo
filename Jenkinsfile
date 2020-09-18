@@ -47,7 +47,7 @@ pipeline{
             post{
                 success{
                     echo "Deploy successful" 
-                    mail bcc: '', body: 'Build Successful ${env.JOB_NAME}', cc: '', from: '', replyTo: '', subject: 'Jenkins job ${env.BUILD_ID}', to: 'nitin16@navgurukul.org'
+                    mail bcc: '', body: 'Build Successful', cc: '', from: 'nitingupta220@gmail.com', replyTo: '', subject: 'Jenkins Job', to: 'nitin16@navgurukul.org'
                 }
                 failure{
                     echo "Deploy failed"
