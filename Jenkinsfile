@@ -60,7 +60,8 @@ pipeline{
             }
             post{
                 success{
-                    echo "Deploy successful"
+                    echo "Deploy successful",
+                    emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
                 }
                 failure{
                     echo "Deploy failed"
