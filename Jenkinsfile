@@ -26,7 +26,7 @@ pipeline{
         }
         stage("cypress parallel tests"){
             environment {
-                CYPRESS_RECORD_KEY=credentials('cypress-record-key-demo')
+                CYPRESS_RECORD_KEY = credentials('cypress-example-kitchensink-record-key')
                 CYPRESS_trashAssetsBeforeRuns = 'false'
             }
             parallel {
