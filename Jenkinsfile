@@ -37,7 +37,7 @@ pipeline{
                         sh "npm run cy:run"
                     }
                 }
-                stage("Tester A"){
+                stage("Tester B"){
                     steps{
                         // echo ""
                         echo "Running build ${env.BUILD_ID}"
