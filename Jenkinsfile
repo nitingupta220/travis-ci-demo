@@ -60,7 +60,7 @@ pipeline{
             }
             post{
                 success{
-                    echo "Deploy successful"
+                    echo "Deploy successful" 
                     emailext body: 'A Test EMail', subject: 'Test', to: 'nitin16@navgurukul.org'
                 }
                 failure{
