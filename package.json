@@ -17,7 +17,7 @@
     "deploy": "gh-pages -d build",
     "cypress:open": "cypress open",
     "cy:verify": "cypress verify",
-    "cy:run": "cypress run --parallel"
+    "cy:run": "cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
