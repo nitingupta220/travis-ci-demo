@@ -48,7 +48,7 @@ pipeline{
                 success{
                     echo "Deploy successful" 
                     // emailext body: 'A Test EMail', to: 'nitin16@navgurukul.org', subject: 'Test'
-                    mail bcc: '', body: 'Testing', cc: '', from: '', replyTo: '', subject: 'Jenkins job', to: 'nitin16@navgurukul.org'
+                    mail body: 'Build successful name: ${JOB_NAME} - Id: {BUILD_ID}', from: 'Jenkins', subject: 'Jenkins Build ${BUILD_ID}', to: 'nitin16@navgurukul.org'
                 }
                 failure{
                     echo "Deploy failed"
