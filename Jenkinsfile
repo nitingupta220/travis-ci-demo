@@ -37,20 +37,6 @@ pipeline{
                         sh "npm run cy:run"
                     }
                 }
-                stage("Tester B"){
-                    steps{
-                        // echo ""
-                        echo "Running build ${env.BUILD_ID}"
-                        sh "npm run cy:run"
-                    }
-                }
-                stage("Tester C"){
-                    steps{
-                        // echo ""
-                        echo "Running build ${env.BUILD_ID}"
-                        sh "npm run cy:run"
-                    }
-                }
             }
         }
         stage("Deploying to Github pages"){
