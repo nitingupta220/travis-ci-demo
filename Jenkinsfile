@@ -24,21 +24,21 @@ pipeline{
         
             }
         }
-        stage("cypress parallel tests"){
-            environment {
-                CYPRESS_RECORD_KEY = credentials('cypress-record-key')
-                CYPRESS_trashAssetsBeforeRuns = 'false'
-            }
-            parallel {
-                stage("Tester A"){
-                    steps{
-                        // echo ""
-                        echo "Running build ${env.BUILD_ID}"
-                        sh "npm run cy:run"
-                    }
-                }
-            }
-        }
+        // stage("cypress parallel tests"){
+        //     environment {
+        //         CYPRESS_RECORD_KEY = credentials('cypress-record-key')
+        //         CYPRESS_trashAssetsBeforeRuns = 'false'
+        //     }
+        //     parallel {
+        //         stage("Tester A"){
+        //             steps{
+        //                 // echo ""
+        //                 echo "Running build ${env.BUILD_ID}"
+        //                 sh "npm run cy:run"
+        //             }
+        //         }
+        //     }
+        // }
         stage("Deploying to Github pages"){
             steps{
                 echo "Deploy started"
