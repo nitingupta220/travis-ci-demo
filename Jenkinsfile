@@ -56,12 +56,9 @@ pipeline{
         //     }
         // }
         stage("Send notification on Slack"){
-            steps{
-                steps {
-                    slackSend channel: 'nitingupta220', message: 'Hello, world'
-                }
+            steps {
+                slackSend channel: 'nitingupta220', message: 'Hello, world'
             }
-            
         }
     }
 }
