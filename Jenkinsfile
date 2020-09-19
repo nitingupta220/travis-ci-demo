@@ -57,7 +57,7 @@ pipeline{
         // }
         stage("Send notification on Slack"){
             steps {
-                slackSend color: 'good', channel: '#test-jenkins', message: "*${currentBuild.currentResult}:* Job ${JOB_NAME} build ${BUILD_NUMBER} by ${BUILD_USER}\n More info at: ${BUILD_URL}"
+                slackSend color: 'good', channel: '#test-jenkins', message: "*${currentBuild.currentResult}:* Job ${JOB_NAME} build ${BUILD_NUMBER}\n More info at: ${BUILD_URL}"
             }
         }
     }
