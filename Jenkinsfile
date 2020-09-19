@@ -57,7 +57,7 @@ pipeline{
         // }
         stage("Send notification on Slack"){
             steps {
-                slackSend channel: 'nitingupta220', message: 'Hello, world'
+                slackSend channel: '#test-jenkins', message: 'Hello, world'
             }
         }
     }
