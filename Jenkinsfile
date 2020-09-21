@@ -22,7 +22,7 @@ pipeline{
                     echo "Dependencies Installed Failed"
                 }
         
-            } 
+            }
         }
         // stage("cypress parallel tests"){
         //     environment {
