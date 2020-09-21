@@ -43,18 +43,18 @@ pipeline{
                 echo "Deploy started"
                 sh "npm run deploy"
             }
-            post{
-                success{
-                    echo "Deploy successful" 
-                    emailext body: '${DEFAULT_CONTENT}', subject: 'Jenkins Job', to: 'nitin16@navgurukul.org' 
-                    // Sending message to slack
-                    slackSend color: 'good', channel: '#test-jenkins', message: "*${currentBuild.currentResult}:* Job ${JOB_NAME} build ${BUILD_NUMBER}\n More info at: ${BUILD_URL}"
-                }
-                failure{
-                    echo "Deploy failed"
-                    slackSend color: 'danger', channel: '#test-jenkins', message: "*${currentBuild.currentResult}:* Job ${JOB_NAME} build ${BUILD_NUMBER}\n More info at: ${BUILD_URL}"
-                }
-            }
+            // post{
+            //     success{
+            //         echo "Deploy successful" 
+            //         emailext body: '${DEFAULT_CONTENT}', subject: 'Jenkins Job', to: 'nitin16@navgurukul.org' 
+            //         // Sending message to slack
+            //         slackSend color: 'good', channel: '#test-jenkins', message: "*${currentBuild.currentResult}:* Job ${JOB_NAME} build ${BUILD_NUMBER}\n More info at: ${BUILD_URL}"
+            //     }
+            //     failure{
+            //         echo "Deploy failed"
+            //         slackSend color: 'danger', channel: '#test-jenkins', message: "*${currentBuild.currentResult}:* Job ${JOB_NAME} build ${BUILD_NUMBER}\n More info at: ${BUILD_URL}"
+            //     }
+            // }
         }
     }
 }
