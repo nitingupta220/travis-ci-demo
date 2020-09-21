@@ -5,7 +5,7 @@ pipeline{
         stage("Get code from Github"){
             steps{
                 echo "Checking out code from Github"
-                git credentialsId: '4d7078da-78cf-4cc5-9111-003196355f4d', url: 'https://github.com/nitingupta220/travis-ci-demo.git'
+                git credentialsId: '0bd29c7b-4e42-44fb-bada-95a8672e32c3', url: 'https://github.com/nitingupta220/travis-ci-demo.git'
             }
         }
         stage("Install the dependencies"){
