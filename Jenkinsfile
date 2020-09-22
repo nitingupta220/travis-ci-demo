@@ -11,8 +11,8 @@ pipeline{
         stage("Install the dependencies"){
             steps{
                 echo "Installing the dependencies"
-                sh "npm ci"
-                sh "npm run cy:verify" 
+                sh "npm i"
+                // sh "npm run cy:verify" 
             }
             post{
                 success{
