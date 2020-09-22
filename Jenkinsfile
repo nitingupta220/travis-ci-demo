@@ -16,7 +16,7 @@ pipeline{
             }
             post{
                 success{
-                    echo "Dependencies Installed Successfully"
+                    echo "Dependencies Installed Successfully"  
                 }
                 failure{
                     echo "Dependencies Installed Failed"
