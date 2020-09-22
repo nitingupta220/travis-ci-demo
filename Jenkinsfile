@@ -41,7 +41,7 @@ pipeline{
         stage("Deploying to Github pages"){
             steps{
                 echo "Deploy started"
-                sh "npm run deploy"
+                sh "npm run deploy"  
             }
             // post{
             //     success{
