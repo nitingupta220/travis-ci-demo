@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Build from Jenkins with Catlight!!!
+          Build from Jenkins with Catlight
         </a>
       </header>
     </div>
