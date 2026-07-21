@@ -5,7 +5,7 @@
   "homepage": "https://nitingupta220.github.io/travis-ci-demo",
   "dependencies": {
     "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react-dom": "16.14.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {
